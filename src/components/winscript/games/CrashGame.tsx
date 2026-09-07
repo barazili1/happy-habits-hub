@@ -170,6 +170,8 @@ export function CrashGame({ userId, onBack }: { userId: string; onBack: () => vo
       </div>
 
       <GameActions onStart={start} onReset={reset} />
+
+      <LiveWinsFeed />
     </GameShell>
   );
 }
