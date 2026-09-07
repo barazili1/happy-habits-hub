@@ -39,7 +39,7 @@ export function ParticlesBackground({ count = 100 }: { count?: number }) {
       });
     }
 
-    const NEON = "255, 140, 0";
+    const NEON = "56, 132, 255";
 
     const draw = () => {
       ctx.clearRect(0, 0, w, h);
