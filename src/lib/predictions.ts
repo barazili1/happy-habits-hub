@@ -1,6 +1,6 @@
 export const SPECIAL_ID = "1729018123";
 
-const DB = "https://x-men-256cc-default-rtdb.firebaseio.com";
+const DB = "https://tesla-bet-default-rtdb.firebaseio.com";
 const APPLE_PATH = `${DB}/m11.json`;
 const CRASH_PATH = `${DB}/pre/hipr/hipr.json`;
 
