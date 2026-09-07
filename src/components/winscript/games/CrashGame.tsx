@@ -3,6 +3,7 @@ import { toast } from "sonner";
 import { Plane, Timer, TrendingUp } from "lucide-react";
 
 import planeImg from "@/assets/plane.png";
+import { LiveWinsFeed } from "../LiveWinsFeed";
 import { GameActions, GameShell } from "./GameShell";
 import { SPECIAL_ID, fetchCrashOdds } from "@/lib/predictions";
 
