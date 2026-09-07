@@ -63,27 +63,27 @@
 
 :root {
   --radius: 1rem;
-  --background: oklch(0.09 0.012 255);
+  --background: oklch(0 0 0);
   --foreground: oklch(0.98 0 0);
-  --card: oklch(0.13 0.018 255);
+  --card: oklch(0.08 0.02 255);
   --card-foreground: oklch(0.98 0 0);
-  --popover: oklch(0.12 0.018 255);
+  --popover: oklch(0.07 0.02 255);
   --popover-foreground: oklch(0.98 0 0);
   --primary: oklch(0.66 0.2 252);
-  --primary-foreground: oklch(0.09 0.012 255);
-  --secondary: oklch(0.17 0.02 255);
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.14 0.03 255);
   --secondary-foreground: oklch(0.98 0 0);
-  --muted: oklch(0.19 0.02 255);
+  --muted: oklch(0.15 0.03 255);
   --muted-foreground: oklch(0.7 0.03 255);
   --accent: oklch(0.66 0.2 252);
-  --accent-foreground: oklch(0.09 0.012 255);
+  --accent-foreground: oklch(0 0 0);
   --destructive: oklch(0.62 0.22 27);
   --destructive-foreground: oklch(0.98 0 0);
-  --border: oklch(0.26 0.03 255);
+  --border: oklch(0.28 0.06 255);
   --input: oklch(0.24 0.03 255);
   --ring: oklch(0.66 0.2 252);
-  --panel: oklch(0.12 0.018 255);
-  --neon: oklch(0.66 0.2 252);
+  --panel: oklch(0.06 0.02 255);
+  --neon: oklch(0.64 0.23 256);
   --chart-1: oklch(0.66 0.2 252);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -92,7 +92,7 @@
   --sidebar: oklch(0.12 0.018 255);
   --sidebar-foreground: oklch(0.98 0 0);
   --sidebar-primary: oklch(0.66 0.2 252);
-  --sidebar-primary-foreground: oklch(0.09 0.012 255);
+  --sidebar-primary-foreground: oklch(0 0 0);
   --sidebar-accent: oklch(0.17 0.02 255);
   --sidebar-accent-foreground: oklch(0.98 0 0);
   --sidebar-border: oklch(0.26 0.03 255);
@@ -315,9 +315,9 @@
   gap: 0.5rem;
   border-radius: 0.9rem;
   font-weight: 800;
-  color: oklch(0.14 0.005 285);
-  background: linear-gradient(135deg, oklch(1 0 0), oklch(0.9 0 0));
-  box-shadow: 0 10px 26px -14px oklch(1 0 0 / 0.5);
+  color: oklch(1 0 0);
+  background: linear-gradient(135deg, color-mix(in oklab, var(--neon) 85%, white 15%), var(--neon) 60%, color-mix(in oklab, var(--neon) 65%, black 35%));
+  box-shadow: 0 12px 30px -12px color-mix(in oklab, var(--neon) 75%, transparent);
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 @utility btn-white-outline {
@@ -329,9 +329,9 @@
   gap: 0.5rem;
   border-radius: 0.9rem;
   font-weight: 800;
-  color: oklch(1 0 0);
-  background: color-mix(in oklab, oklch(1 0 0) 8%, transparent);
-  border: 1px solid color-mix(in oklab, oklch(1 0 0) 55%, transparent);
+  color: var(--neon);
+  background: color-mix(in oklab, var(--neon) 10%, transparent);
+  border: 1px solid color-mix(in oklab, var(--neon) 55%, transparent);
   transition: background 0.2s ease;
 }
 
